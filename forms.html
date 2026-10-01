@@ -6,22 +6,53 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Sign Up</h1>
+    <p>Please fill in this forms to create an  account</p>
+    <hr>
+
    <form action="/submit" method="post">
 
-  <!-- Label and Input for Username -->
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required />
+ 
+  <label for="Emial">Username:</label>
+  <input placeholder="Enter Email" type="text" id="username" name="username" required />
+  <br>
+  <br>
 
-  <!-- Label and Input for Password -->
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required />
+ 
+  <label for="Password">Password:</label>
+  <input placeholder="Enter Pass" type="password" id="password" name="password" required />
+  <br>
+  <br>
 
-  <!-- Button to Submit the Form -->
-  <button type="submit">Login</button>
+    <label for=" Repeat Password">Password:</label>
+  <input placeholder="Repeat pass" type="password" id="password" name="password" required />
+  <br>
+  <br>
+  <label for="Phone no">Phone no:</label>
+  <input placeholder="Ph no" type="text" id="username" name="username" required />
+  <br>
+  <br>
+  <lable for="Date">Enter date</lable>
+  <input type="date">
+  <br>
+<br>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="others"> Others
+
+<input type="checkbox" id="remember" name="remember">
+<label for="remember">Remember Me</label>
+
+<br>
+<br>
+<P>by creating account you agree to out <a href="">Terms & Privacy</a></p>
+<br>
+  
+  <input type="submit">
 
 </form>
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
 
     
 </body>
