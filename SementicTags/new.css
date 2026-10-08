@@ -1,4 +1,4 @@
-p{color: green !important;}
+p{color: green;}
 .note{color: orange;}
 #intro{color: purple;}
 #hi{color: rgb(226, 226, 42);}
@@ -8,4 +8,7 @@ p{color: green !important;}
     width: 100px;
     border: 1px solid black;
     background-color: rgb(225, 209, 188);
+}
+div p{
+    color: yellow;
 }
