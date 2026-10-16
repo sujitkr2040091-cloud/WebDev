@@ -1,8 +1,9 @@
 .container{
     background-color: blue;
     display: flex;
-    flex-direction: column-reverse;
-    width: 150px;
+    flex-direction: row-reverse;
+    /* width: 150px; */
+    flex-wrap: wrap;
 }
 .container div {
   background-color: #ccd610;
