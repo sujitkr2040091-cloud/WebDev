@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative ;
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+        }
+        .box span{
+            position: absolute;
+            
+        }
+        .top-center {
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .bottom-center {
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .left-center {
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+        }
+        .right-center {
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    <span class="name top-center">Sujit kumar</span>
+  <span class="name bottom-center">Sujit kumar</span>
+  <span class="name left-center">Sujit kumar</span>
+  <span class="name right-center">Sujit kumar</span>
+    </div>
+  
+    
+</body>
+</html>
