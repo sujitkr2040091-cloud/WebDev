@@ -1,13 +1,14 @@
 .container{
     background-color: blue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* width: 150px; */
     flex-wrap: wrap;
     /* flex-wrap:wrap-reverse; */
     align-items: center;
     height: 1100px;
     gap: 20px;
+    justify-content: flex-end;
 }
 
 .container div {
