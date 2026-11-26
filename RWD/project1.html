@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+  border: 1px solid black;
+
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+} 
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: calc((100vh - 20px) / 3);
+    height: auto;
+  }
+} 
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: calc((100vh - 20px) / 3);
+    height: auto;
+  }
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+     <div class="grid-container">
+        <div class="card"><img src="assets/11.jpeg" alt="Image 1"></div>
+        <div class="card"><img src="assets/2.jpg" alt="Image 2"></div>
+        <div class="card"><img src="assets/33.png" alt="Image 3"></div>
+        <div class="card"><img src="assets/4.jpg" alt="Image 4"></div>
+        <div class="card"><img src="assets/55.jpeg" alt="Image 5"></div>
+        <div class="card"><img src="assets/66.jpeg" alt="Image 6"></div>
+        <div class="card"><img src="assets/7.jpg" alt="Image 7"></div>
+        <div class="card"><img src="assets/8.jpg" alt="Image 8"></div>
+        <div class="card"><img src="assets/9.jpg" alt="Image 9"></div>
+    </div>
+    
+</body>
+</html>
